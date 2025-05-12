@@ -103,8 +103,39 @@ header.shadow .bx {
     width: 30px;
     height: 30px;
 }
+.login, .register {
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.4rem;
+    background: var(--main-color);
+    color: #fff;
+    font-weight: 400;
+}
+.login { margin-left: 1rem; }
+.register { margin-left: 0.3rem; }
+header .login, header .register {
+    padding: 0.5rem 1.2rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 400;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px 0 rgba(229,57,53,0.10);
+    transition: background 0.5s, color 0.5s;
+    display: inline-block;
+}
+header .login { margin-left: 1rem; }
+header .register { margin-left: 0.3rem; }
+header .login:hover, header .register:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.login:hover, .register:hover {
+    background: red;
+    color: #fff;
+}
 .login{
-    padding: 0.7rem 1.4rem;
+    padding: 0.5rem 1.2rem;
     background: var(--main-color);
     color: var(--bg-color);
     font-weight: 400;
@@ -221,6 +252,32 @@ header.shadow .bx {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #e53935 #222;
+    padding-bottom: 20px;
+}
+.coming-container::-webkit-scrollbar {
+    height: 10px;
+    background: #222;
+    border-radius: 5px;
+}
+.coming-container::-webkit-scrollbar-thumb {
+    background: #e53935;
+    border-radius: 5px;
+}
+.coming-pagination.swiper-pagination-progressbar {
+    background: #222;
+    height: 6px;
+    border-radius: 3px;
+    margin: 20px auto 0 auto;
+    width: 80%;
+}
+.coming-pagination .swiper-pagination-progressbar-fill {
+    background: var(--main-color);
+    border-radius: 3px;
 }
 .coming-container .box img img:hover{
     transform: translateY(0);
@@ -322,11 +379,6 @@ body.dark-mode .news-card .btn:hover {
     font-size: 1rem;
     transition: border 0.2s, background 0.3s, color 0.3s;
 }
-body.dark-mode .news-card input.email {
-    background: #222;
-    color: #fff;
-    border: 1px solid #444;
-}
 .news-card input.email:focus {
     border: 1.5px solid var(--main-color);
     outline: none;
@@ -385,6 +437,16 @@ body.dark-mode .news-card input.email {
     align-items: center;
     padding: 1.5rem 0;
 }
+body.dark-mode .footer {
+    background: #fff !important;
+}
+body.dark-mode .footer .logo i,
+body.dark-mode .footer .logo span,
+body.dark-mode .footer .social a,
+body.dark-mode .footer .social a i {
+    color: #222 !important;
+}
+
 .footer .logo {
     display: flex;
     align-items: center;

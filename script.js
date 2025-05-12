@@ -33,10 +33,14 @@ var swiper = new Swiper(".coming-container", {
     spaceBetween: 20,
     loop: true,
     autoplay: {
-      delay: 55000,
+      delay: 2500,
       disableOnInteraction: false,
     },
     centeredSlides: true,
+    pagination: {
+      el: ".coming-pagination",
+      type: "progressbar",
+    },
     breakpoints: {
         0:{
             slidesPerView: 2,
