@@ -15,9 +15,7 @@ window.addEventListener("scroll", () => {
     header.classList.toggle("shadow", window.scrollY > 0);
 });
 
-
-
-
+//swiper
 var swiper = new Swiper(".home", {
     spaceBetween: 30,
     centeredSlides: true,
