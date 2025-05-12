@@ -29,6 +29,10 @@ html::-webkit-scrollbar-thumb{
 (phần di chuyển được của thanh cuộn, tức là cái nút bạn kéo lên/xuống) */
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
