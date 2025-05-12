@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navBar -->
+     <header>
+        <a href="#" class="logo">
+            <i class='bx bx-movie' ></i>
+            <span>Film</span>
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- menu -->
+    
+     <ul class="bar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Coming</a></li>
+        <li><a href="#">News</a></li>    
+     </ul>
+     <a href="#" class="login">Sign In</a>
+    </header>
+    
+    <!-- home -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+        <!-- Box 1 -->
+        <div class="swiper-slide container">
+            <img src="./spider.jpg" alt="">
+            <div class="home-text">
+                <span>Marvel</span>
+                <h1>Spider-man <br> No way home</h1>
+                <a href="#" class="login">Watch Now</a>
+                <a href="#" class="play">
+                </a>
+            </div>
+        </div>
+            
+        <!-- Box 2 -->
+        <div class="swiper-slide container">
+            <img src="./wp5497091-avengers-endgame-pc-wallpapers.jpg" alt="">
+            <div class="home-text">
+                <span>Marvel</span>
+                <h1>Avengers <br> Endgame</h1>
+                <a href="#" class="login">Watch Now</a>
+                <a href="#" class="play">
+                </a>
+            </div>
+        </div>
+        <!-- Box 3 -->
+        <div class="swiper-slide container">
+            <img src="./wp2033181-guardians-of-the-galaxy-vol-2-wallpapers.jpg" alt="">
+        <div class="home-text">
+            <span>Marvel</span>
+            <h1>Guardians <br> of the Galaxy</h1>
+            <a href="#" class="login">Watch Now</a>
+            <a href="#" class="play">
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="movies" id="movies">
+        <h2 class="heading">Book Now</h2>
+        <!-- movies container -->
+        <div class="movies-container">
+            <!-- box 1 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./venom.jpg" alt="">
+                </div>
+                <h3>Venom</h3>
+                <span>120 min | Action</span>
+            </div>
+
+            <!-- box 2 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./batmanvsjoker.jpg" alt="">
+                </div>
+                <h3>Batman Vs Joker</h3>
+                <span>120 min | Thriller</span>
+            </div>
+
+            <!-- box 3 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./johnwick.jpg" alt="">
+                </div>
+                <h3>John Wick</h3>
+                <span>120 min | Adventure</span>
+            </div>
+
+            <!-- box 4 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./aquaman.jpg" alt="">
+                </div>
+                <h3>Aquaman</h3>
+                <span>120 min | Action</span>
+            </div>
+
+            <!-- box 5 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./blackpanther.jpg" alt="">
+                </div>
+                <h3>Black Panther</h3>
+                <span>120 min | Thriller</span>
+            </div>
+
+            <!-- box 6 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./thor.jpg" alt="">
+                </div>
+                <h3>Thor</h3>
+                <span>120 min | Adventure</span>
+            </div>
+
+            <!-- box 7 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./mai.jpg" alt="">
+                </div>
+                <h3>Mai</h3>
+                <span>120 phút | hài, lãng mạn</span>
+            </div>
+
+            <!-- box 8 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./piano.jpg" alt="">
+                </div>
+                <h3>Đào, Phở và Piano</h3>
+                <span>120 phút | sử thi lãng mạn</span>
+            </div>
+
+            <!-- box 9 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./minion.jpg" alt="">
+                </div>
+                <h3>Minion</h3>
+                <span>120 min | Comedy</span>
+            </div>
+
+            <!-- box 10 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./50.jpg" alt="">
+                </div>
+                <h3>Fifty Shades Darker</h3>
+                <span>120 min | 18+ </span>
+            </div>
+        </div>
+    </section>
+    <!-- Coming -->
+    <section class="coming" id="coming">
+        <h2 class="heading">Coming Soon</h2>
+        <!-- Coming container -->
+        <div class="coming-container swiper">
+  <div class="swiper-wrapper">
+    <!-- box 1 -->
+    <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="./frozen.jpg" alt="">
+                </div>
+                <h3>Frozen II</h3>
+                <span>120 min | Animation</span>
+            </div>
+
+            <!-- box 2 -->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="./fast.jpg" alt="">
+                </div>
+                <h3>Fast & Furious</h3>
+                <span>120 min | Action</span>
+            </div>
+
+            <!-- box 3 -->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="./up.jpg" alt="">
+                </div>
+                <h3>Up</h3>
+                <span>120 min | Animation</span>
+            </div>
+
+            <!-- box 4 -->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="./monster.jpg" alt="">
+                </div>
+                <h3>Monster Hunter</h3>
+                <span>120 min | Action</span>
+            </div>
+
+            <!-- box 5 -->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="./avatar.jpg" alt="">
+                </div>
+                <h3>Avatar</h3>
+                <span>120 min | Action</span>
+            </div>
+
+            <!-- box 6 -->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="./hero.jpg" alt="">
+                </div>
+                <h3>Big Hero 6</h3>
+                <span>120 min | Animation</span>
+            </div>
+
+            <!-- box 7 -->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="./toy.jpg" alt="">
+                </div>
+                <h3>Toy Story</h3>
+                <span>120 min | Animation</span>
+            </div>
+
+            <!-- box 8 -->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="./insideout.jpg" alt="">
+                </div>
+                <h3>Inside Out</h3>
+                <span>120 min | Animation</span>
+            </div>
+
+            <!-- box 9 -->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="./Tangled.jpg" alt="">
+                </div>
+                <h3>Tangled</h3>
+                <span>120 min | Animation</span>
+            </div>
+
+            <!-- box 10 -->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="./Moana.jpg" alt="">
+                </div>
+                <h3>Moana</h3>
+                <span>120 min | Animation</span>
+            </div>
+        </div>
+    </div> <!-- end swiper-wrapper -->
+</section>
+
+<!-- News -->
+<section class="news" id="news">
+    <h2>Subscribe To Get <br> Money</h2>
+    <form action="">
+        <input type="email" class="email" placeholder="Enter your email">
+        <input type="submit" value="Subscribe" class="btn">
+    </form>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <a href="#" class="logo">
+        <i class='bx bx-film' ></i>
+        <span>Film</span>
+    </a>
+    <div class="social">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-youtube"></i></a>
+    </div>
+</section>
+
+<!-- Copyright -->
+<div class="copyright">
+    <p>&copy; 2025 by <span> Khấc Film</span> | All Rights Reserved</p>
+</div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body> 
+</html>
