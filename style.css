@@ -9,10 +9,10 @@
     scroll-behavior: smooth;
     font-family: "Fuzzy Bubbles", sans-serif;
 }
-:root{
-    --main-color: red;
-    --text-color: black;
-    --bg-color: white;
+:root {
+    --main-color: #e53935;
+    --text-color: #222;
+    --bg-color: #fff;
 }
 /* ScrollBar */
 html::-webkit-scrollbar{
@@ -29,10 +29,10 @@ html::-webkit-scrollbar-thumb{
 (phần di chuyển được của thanh cuộn, tức là cái nút bạn kéo lên/xuống) */
 
 
-body{
-    background-color: var(--text-color);
-    color: var(--bg-color);
-    border-radius: 5rem;
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 0;
 }
 section{
     padding: 4.5rem 0 1.5rem;
@@ -48,7 +48,15 @@ header{
     align-items: center;
     z-index: 100;
     transition: 0.5s;
-    /* background: var(--main-color); */
+}
+body.dark-mode header {
+    background: #111 !important;
+    color: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.16);
+}
+body.dark-mode .bar {
+    background: #181818 !important;
+    color: #fff;
 }
 header.shadow{
     background: white;
@@ -230,6 +238,117 @@ header.shadow .bx {
     justify-content: center;
     row-gap: 2rem;
 }
+body.dark-mode .news-card {
+    background: #111;
+    border: 1.5px solid #222;
+    box-shadow: 0 4px 32px 0 rgba(0,0,0,0.25);
+}
+.news-card {
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+    border-radius: 1.2rem;
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    transition: background 0.3s, border 0.3s;
+    border: 1.5px solid #eee;
+}
+.news-icon-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+.news-icon-title i {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 0.2rem;
+}
+.news-icon-title h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    color: var(--text-color);
+    text-align: center;
+}
+.news-desc {
+    color: #888;
+    font-size: 0.98rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.news-card form {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    background: none;
+    padding: 0;
+    border-radius: 0.5rem;
+    justify-content: center;
+}
+body.dark-mode .news-card form {
+    background: #232323;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.12);
+}
+body.dark-mode .news-card input.email {
+    background: #111;
+    color: #fff;
+    border: 1.5px solid #444;
+}
+body.dark-mode .news-card input.email::placeholder {
+    color: #bbb;
+    opacity: 1;
+}
+body.dark-mode .news-card .btn {
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 8px 0 rgba(229,57,53,0.10);
+}
+body.dark-mode .news-card .btn:hover {
+    background: #ff5252;
+    color: #fff;
+}
+.news-card input.email {
+    flex: 1 1 0;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border 0.2s, background 0.3s, color 0.3s;
+}
+body.dark-mode .news-card input.email {
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+.news-card input.email:focus {
+    border: 1.5px solid var(--main-color);
+    outline: none;
+}
+.news-card .btn {
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: var(--main-color);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.05);
+}
+.news-card .btn:hover {
+    background: #b71c1c;
+    color: #fff;
+}
+
 .news h2{
     font-size: 1.2rem;
     font-weight: 600;
@@ -263,6 +382,26 @@ header.shadow .bx {
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.footer .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+.footer .logo i {
+    color: var(--main-color);
+    font-size: 2.2rem;
+    vertical-align: middle;
+}
+.footer .logo span {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 0.3rem;
 }
 .social{
     display: flex;

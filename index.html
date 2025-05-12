@@ -30,6 +30,7 @@
         <li><a href="#">News</a></li>    
      </ul>
      <a href="#" class="login">Sign In</a>
+     <button id="toggle-theme-btn" style="margin-left: 1rem; padding: 0.5rem 1rem; border-radius: 0.3rem; border: 1px solid #ccc; background: #fff; color: #222; cursor: pointer;">Dark Mode</button>
     </header>
     
     <!-- home -->
@@ -269,11 +270,16 @@
 
 <!-- News -->
 <section class="news" id="news">
-    <h2>Subscribe To Get <br> Money</h2>
+  <div class="news-card">
+    <div class="news-icon-title">
+      <i class='bx bx-envelope'></i>
+      <h2>Subscribe for <span style="color:var(--main-color)">Khấc </span>Notifications</h2>
+    </div>
     <form action="">
-        <input type="email" class="email" placeholder="Enter your email">
-        <input type="submit" value="Subscribe" class="btn">
+      <input type="email" class="email" placeholder="Enter your email">
+      <input type="submit" value="Subscribe" class="btn">
     </form>
+  </div>
 </section>
 
 <!-- Footer -->
@@ -298,4 +304,31 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body> 
+    <script>
+      const btn = document.getElementById('toggle-theme-btn');
+      let isDark = false;
+      btn.addEventListener('click', function() {
+        const root = document.documentElement;
+        if (!isDark) {
+          // Dark mode: chỉ đổi biến CSS
+          root.style.setProperty('--main-color', '#e53935');
+          root.style.setProperty('--text-color', '#fff');
+          root.style.setProperty('--bg-color', '#222');
+          btn.textContent = 'Light Mode';
+          btn.style.background = '#222';
+          btn.style.color = '#fff';
+          btn.style.border = '1px solid #444';
+        } else {
+          // Light mode: chỉ đổi biến CSS
+          root.style.setProperty('--main-color', '#e53935');
+          root.style.setProperty('--text-color', '#222');
+          root.style.setProperty('--bg-color', '#fff');
+          btn.textContent = 'Dark Mode';
+          btn.style.background = '#fff';
+          btn.style.color = '#222';
+          btn.style.border = '1px solid #ccc';
+        }
+        isDark = !isDark;
+      });
+    </script>
 </html>
