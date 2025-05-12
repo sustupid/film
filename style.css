@@ -560,4 +560,17 @@ body.dark-mode .footer .social a i {
     }
 }
 
+@media (max-width: 425px){
+    .news form .email{
+        width: auto;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: 1rem;
+    }
+
+}
+
+
+
 
